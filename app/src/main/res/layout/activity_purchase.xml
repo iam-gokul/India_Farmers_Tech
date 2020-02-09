@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Purchase">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/ic_menu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="30dp"
+        android:text="IndiaFarm.Tech"
+        android:textSize="20dp"
+        app:fontFamily="@font/rubik_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:fontFamily="@font/rubik_light"
+        android:text="By Mudivilee Solutions LLP"
+        android:textSize="10dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="10dp"
+        android:text="user Id"
+        android:fontFamily="@font/rubik_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="113dp">
+
+        <TextView
+            android:id="@+id/vegname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Vegetable"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/vegquantity"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Quantity"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="right"
+            android:text="Cost"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemview"
+        android:layout_width="391dp"
+        android:layout_height="323dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="179dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/round_bg"
+        android:backgroundTint="@color/colorGreenMatte"
+        android:text="Purchase Now"
+        android:padding="15dp"
+        android:textColor="#fff">
+
+    </Button>
+
+
+</RelativeLayout>
